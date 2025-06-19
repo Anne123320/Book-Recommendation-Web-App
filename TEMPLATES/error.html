@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff6f6;
+            padding: 40px;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #d9534f;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            overflow-x: auto;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Something went wrong</h1>
+        <p>{{ message }}</p>
+        {% if details %}
+            <h3>Details:</h3>
+            <pre>{{ details }}</pre>
+        {% endif %}
+    </div>
+</body>
+</html>
